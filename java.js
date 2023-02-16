@@ -1,8 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 
-const promptUser = () => {
-  return inquirer
+inquirer
     .prompt([
       {
         type: "input",
@@ -51,4 +50,3 @@ const promptUser = () => {
         err ? console.log(err) : console.log("Success!")
       );
     });
-};
